@@ -286,6 +286,9 @@ BUNGA</string>
                <property name="checkable">
                 <bool>true</bool>
                </property>
+               <property name="rules" stdset="0">
+                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;isHomed&quot;}]</string>
+               </property>
                <property name="pinBaseName" stdset="0">
                 <string>table</string>
                </property>
@@ -309,6 +312,9 @@ BUNGA</string>
                 <string>START
 BUNGA
 BUNGA</string>
+               </property>
+               <property name="rules" stdset="0">
+                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;isHomed&quot;}]</string>
                </property>
                <property name="pinBaseName" stdset="0">
                 <string>start</string>
