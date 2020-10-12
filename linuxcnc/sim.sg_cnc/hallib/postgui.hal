@@ -1,0 +1,3 @@
+net table_enabled <= qtpyvcp.table.checked
+net start1 <= qtpyvcp.start.io
+net x_position => qtpyvcp.direction_led.on

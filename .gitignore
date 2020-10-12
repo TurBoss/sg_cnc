@@ -1,0 +1,5 @@
+sg_cnc.egg-info
+.idea/
+*.vcp_persistent_data.pickle
+*.var.bak
+*.pyc

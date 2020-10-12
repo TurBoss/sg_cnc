@@ -1,0 +1,40 @@
+
+loadrt toggle names=direction
+loadrt or2 names=start
+loadrt and2 names=enabled
+loadrt edge names=change_dir
+loadrt conv_float_s32 count=1
+loadrt conv_s32_bit count=1
+loadrt conv_bit_s32 count=1
+
+addf direction servo-thread
+addf start servo-thread
+addf enabled servo-thread
+addf change_dir servo-thread
+addf conv-float-s32.0 servo-thread
+addf conv-s32-bit.0 servo-thread
+addf conv-bit-s32.0 servo-thread
+
+setp axis.x.eoffset-enable 1
+setp axis.x.eoffset-scale 30
+
+setp change_dir.both 0
+setp change_dir.in-edge TRUE
+setp change_dir.out-width-ns 1000000
+
+net float_to_s32_0 conv-float-s32.0.in <= joint.0.vel-cmd
+net s32_to_bit_0 conv-s32-bit.0.in <= conv-float-s32.0.out
+net change change_dir.in <= conv-s32-bit.0.out
+
+net x_position conv-bit-s32.0.in <= direction.out
+net x_counts axis.x.eoffset-counts <= conv-bit-s32.0.out
+
+
+net inpos start.in0 <= change_dir.out
+net start1 => start.in1
+
+net table_enabled => enabled.in0
+net go enabled.in1 <= start.out
+
+
+net table_dir direction.in <= enabled.out

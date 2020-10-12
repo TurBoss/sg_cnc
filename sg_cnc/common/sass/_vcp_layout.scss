@@ -1,0 +1,183 @@
+/*===========================================================================*/
+/*                              VCP Layout                                   */
+/*===========================================================================*/
+
+#headsUpButtonBar {
+  background-color: transparent;
+}
+
+#headsUpButtonBar > QPushButton {
+  min-width: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+
+.ErrorDialog > QPushButton {
+  min-width: 75px;
+}
+
+.ErrorDialog > QLabel {
+  background: transparent;
+}
+
+.ErrorDialog > QTextEdit {
+  background: lighten($background, 3%);
+  border: $border;
+  border-radius: 3px;
+  font: aaker;
+}
+
+.ErrorDialog #reportIssue {
+  background: red;
+  border-color: green;
+}
+
+.ErrorDialog #reportIssue {
+  background: red;
+  border-color: green;
+}
+
+.ErrorDialog #quitApp {
+  border-color: rgba(255, 0, 0, 130);
+}
+
+.ErrorDialog #ignoreException {
+  border-color: rgba(255, 255, 0, 90);
+}
+
+.GcodeTextEdit {
+  font: 11pt "Roboto Mono";
+  border: none;
+  border-radius: 2px;
+}
+
+.VirtualInput > QPushButton {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+/*===========================================================================*/
+/*                            MonoKrom DRO                                   */
+/*===========================================================================*/
+
+.MonokromDroWidget {
+  min-width: 320px;
+}
+
+.MonokromDroWidget DROLineEdit {
+  font: bold italic 30pt "DSEG7 Classic";
+  border-color: transparent;
+  background: transparent;
+}
+
+.MonokromDroWidget DROLineEdit:focus {
+  border-color: transparent;
+  background: transparent;
+  selection-background-color : green;
+}
+
+.MonokromDroWidget DROLineEdit:disabled {
+  border-color: transparent;
+  background: transparent;
+}
+
+.MonokromDroWidget > QFrame {
+  border: $border;
+  padding: 0px;
+}
+
+.MonokromDroWidget QPushButton {
+  font-weight: normal;
+  font-size: 28px;
+  width: 1.3em;
+  border: none;
+  border-radius: 0px;
+  color: $background;
+  background: $border-color;
+}
+
+.MonokromDroWidget[styleClass="error"] > QFrame {
+  border-color: red;
+}
+
+.MonokromDroWidget[styleClass="error"] QPushButton {
+  background: red;
+  color: $border-color;
+}
+
+.MonokromDroWidget QLabel {
+  margin: 6px;
+  border: $border;
+  border-radius: 4px;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.MonokromDroWidget[axisHomed='false'] #homed_indicator {
+  background-color: $background;
+  // qproperty-icon: url(icons/unomed.png);
+}
+
+.MonokromDroWidget[axisHomed='true'] #homed_indicator {
+  background-color: $border-color;
+  // qproperty-icon: url(icons/homed.png);
+}
+
+.ActionButton {
+  // max-height: 10px;
+}
+
+
+QFrame[styleClass="comboFrame"] {
+  padding: 0px;
+  border: $border;
+}
+
+QFrame[styleClass="comboFrame"] QLabel[styleClass="comboFrame"] {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+  color: $background;
+  background: $border-color;
+  padding: 0px;
+  padding-left: 4px;
+  height: 20px
+}
+
+QFrame[styleClass="comboFrame"] QComboBox {
+  font-size: 14px;
+  font-weight: bold;
+  color: $background;
+  background: $border-color;
+  border-radius: 0px;
+  // border-bottom-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-bottom: none;
+  border-top: none;
+  height: 20px;
+}
+
+QFrame[styleClass="comboFrame"] GcodeTextEdit {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  padding: 1px;
+}
+
+#mainTabWidget:pane {
+  border: none;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+
+#mainTabWidget:tab-bar:bottom {
+  border: $border;
+  color: red;
+  // border-top-left-radius: $border-radius;
+  // border-top-right-radius: $border-radius;
+}
+
+
+ QLabel {
+  background-color: $background;
+}
