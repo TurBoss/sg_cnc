@@ -7,20 +7,20 @@
 
 ## Quick install
 
-install linuxcnc 2.80 using the debian 10 iso
+install linuxcnc 2.9pre using the debian 11
 
 http://www.linuxcnc.org/
 
 ### Dependencies
 
 ```
-$ sudo apt install python-pyqt5 python-pyqt5.qtquick python-dbus.mainloop.pyqt5 python-pyqt5.qtopengl python-pyqt5.qsci python-pyqt5.qtmultimedia qml-module-qtquick-controls gstreamer1.0-plugins-bad libqt5multimedia5-plugins pyqt5-dev-tools python-dev python-setuptools python-pip git
+$ sudo apt install python3-pyqt5 python3-pyqt5.qtquick python3-dbus.mainloop.pyqt5 python3-pyqt5.qtopengl python3-pyqt5.qsci python3-pyqt5.qtmultimedia qml-module-qtquick-controls gstreamer1.0-plugins-bad libqt5multimedia5-plugins pyqt5-dev-tools python3-dev python3-setuptools python3-pip git
 ```
 
 ### installation
 
 ```
-$ git clone https://github.com/kcjengr/sg_cnc.git
+$ git clone https://github.com/turboss/sg_cnc.git
 $ cd sg_cnc
 $ pip install -e .
 ```
@@ -30,12 +30,12 @@ $ pip install -e .
 now you can run editvcp to edit the interface
 
 ```
-$ editvcp sg_cnc
+$ editvcp sg_cnc-sg
 ```
 
 ## Resources
 
-* [Development](https://github.com/kecjengr/sg_cnc)
+* [Development](https://github.com/turboss/sg_cnc)
 * [Documentation](https://qtpyvcp.com)
 * [Issue Tracker]()
 
@@ -47,7 +47,7 @@ $ editvcp sg_cnc
 * PyQt5 or PySide2
 * [QtPyVCP](https://qtpyvcp.com/)
 
-SG_CNC is developed and tested using the LinuxCNC Debian 10 (buster) [Live ISO](http://www.linuxcnc.org/) It should run on any system that can have PyQt5 installed, but Debian 10 is the only OS
+SG_CNC is developed and tested using the LinuxCNC Debian 11, It should run on any system that can have PyQt5 installed, but Debian 11 is the only OS
 that is officially supported.
 
 
