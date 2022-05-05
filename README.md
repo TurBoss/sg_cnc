@@ -42,8 +42,8 @@ $ editvcp sg_cnc-sg
 
 ## Dependancies
 
-* [LinuxCNC](https://linuxcnc.org) 2.80
-* Python 2.7
+* [LinuxCNC](https://linuxcnc.org) 2.9pre
+* Python 3.9
 * PyQt5 or PySide2
 * [QtPyVCP](https://qtpyvcp.com/)
 
