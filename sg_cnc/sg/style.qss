@@ -383,7 +383,7 @@ QGroupBox::title {
   subcontrol-position: top center;
   padding: 1px;
   color: #16160e;
-  background: red; }
+  background: lime; }
 
 /*===========================================================================*/
 /*                                QTabBar                                    */
@@ -522,7 +522,7 @@ QTabWidget::tab-bar:right {
 /*===========================================================================*/
 /*                                QFrame                                     */
 /*===========================================================================*/
-.QFrame {
+QFrame {
   border: 1px solid lime;
   border-width: 1px;
   border-color: lime;

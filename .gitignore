@@ -3,3 +3,13 @@ sg_cnc.egg-info
 *.vcp_persistent_data.pickle
 *.var.bak
 *.pyc
+
+.project
+
+.pydevproject
+
+linuxcnc/sim.sg_cnc/halshow.preferences
+
+linuxcnc/sim.sg_cnc/sim.log
+
+*.log

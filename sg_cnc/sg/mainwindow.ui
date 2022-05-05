@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1360</width>
-    <height>768</height>
+    <width>550</width>
+    <height>348</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -207,7 +207,7 @@
           <item row="1" column="2">
            <widget class="QGroupBox" name="main_gbox_3">
             <property name="title">
-             <string>RUN</string>
+             <string>INIT</string>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_8">
              <property name="spacing">
@@ -233,13 +233,19 @@
                  <height>100</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="focusPolicy">
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="styleSheet">
-                <string notr="true">QPushButton {
-   	font: 15pt &quot;Bebas Kai&quot;;
-}</string>
+                <string notr="true"/>
                </property>
                <property name="text">
                 <string>REF ALL</string>
@@ -258,7 +264,7 @@
           <item row="0" column="1">
            <widget class="QGroupBox" name="main_gbox_6">
             <property name="title">
-             <string>MAIN</string>
+             <string>RUN</string>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_12">
              <property name="spacing">
@@ -278,10 +284,16 @@
                  <height>120</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="text">
-                <string>ENABLE
-BUNGA
-BUNGA</string>
+                <string>ENABLE</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -308,10 +320,16 @@ BUNGA</string>
                  <height>120</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="text">
-                <string>START
-BUNGA
-BUNGA</string>
+                <string>START</string>
                </property>
                <property name="rules" stdset="0">
                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;isHomed&quot;}]</string>
@@ -353,6 +371,14 @@ BUNGA</string>
                  <height>100</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="text">
                 <string>E-STOP</string>
                </property>
@@ -386,6 +412,14 @@ BUNGA</string>
                  <width>100</width>
                  <height>100</height>
                 </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
                </property>
                <property name="text">
                 <string>POWER</string>
@@ -431,30 +465,10 @@ BUNGA</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>HalButton</class>
-   <extends>QPushButton</extends>
-   <header>qtpyvcp.widgets.hal_widgets.hal_button</header>
-  </customwidget>
-  <customwidget>
-   <class>StatusLED</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.display_widgets.status_led</header>
-  </customwidget>
-  <customwidget>
-   <class>HalLedIndicator</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.hal_widgets.hal_led</header>
-  </customwidget>
-  <customwidget>
    <class>VCPMainWindow</class>
    <extends>QMainWindow</extends>
    <header>qtpyvcp.widgets.form_widgets.main_window</header>
    <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>DROLabel</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.dro_label</header>
   </customwidget>
   <customwidget>
    <class>ActionButton</class>
@@ -462,9 +476,29 @@ BUNGA</string>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
   </customwidget>
   <customwidget>
+   <class>DROLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.dro_label</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLED</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_led</header>
+  </customwidget>
+  <customwidget>
    <class>NotificationWidget</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.display_widgets.notification_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>HalLedIndicator</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_led</header>
+  </customwidget>
+  <customwidget>
+   <class>HalButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_button</header>
   </customwidget>
  </customwidgets>
  <resources/>

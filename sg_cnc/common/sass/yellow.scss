@@ -1,7 +1,5 @@
 // Change default values
 
-// Import base style
-@import 'base';
 
 // Standard Colors
 $text-color: rgb(114, 114, 113);
@@ -21,3 +19,6 @@ $disabled-border-color: lighten($background, 7%);
 // Borders
 $border-radius: 3px;
 $border: 1px solid $border-color;
+
+// Import base style
+@import 'base';
