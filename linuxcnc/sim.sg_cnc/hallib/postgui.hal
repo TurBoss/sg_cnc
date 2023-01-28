@@ -1,3 +1,4 @@
 net table_enabled <= qtpyvcp.table.checked
 net start1 <= qtpyvcp.start.io
 net x_position => qtpyvcp.direction_led.on
+net float_to_s32_0 => qtpyvcp.halplot.eoffset

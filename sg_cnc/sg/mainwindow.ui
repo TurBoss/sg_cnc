@@ -41,7 +41,7 @@
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="tab">
+      <widget class="QWidget" name="tab_0">
        <attribute name="title">
         <string>MAIN</string>
        </attribute>
@@ -57,6 +57,156 @@
           <property name="topMargin">
            <number>13</number>
           </property>
+          <item row="1" column="2">
+           <widget class="QGroupBox" name="main_gbox_3">
+            <property name="title">
+             <string>INIT</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="ActionButton" name="ref_all_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>32</width>
+                 <height>27</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>REF ALL</string>
+               </property>
+               <property name="rules" stdset="0">
+                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'REF ALL'&quot;, &quot;name&quot;: &quot;reference_all&quot;}]</string>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>machine.home.all</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QGroupBox" name="main_gbox_5">
+            <property name="title">
+             <string>MAIN</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="ActionButton" name="estop_abutton_5">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>32</width>
+                 <height>27</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>E-STOP</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>machine.estop.toggle</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="power_abutton_6">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>32</width>
+                 <height>27</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Sans</family>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>POWER</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>machine.power.toggle</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
           <item row="0" column="2">
            <layout class="QGridLayout" name="gridLayout_2">
             <item row="0" column="1">
@@ -204,63 +354,6 @@
             </item>
            </layout>
           </item>
-          <item row="1" column="2">
-           <widget class="QGroupBox" name="main_gbox_3">
-            <property name="title">
-             <string>INIT</string>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_8">
-             <property name="spacing">
-              <number>10</number>
-             </property>
-             <item>
-              <widget class="ActionButton" name="ref_all_button">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>1</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>32</width>
-                 <height>27</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>100</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Sans</family>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
-               <property name="focusPolicy">
-                <enum>Qt::NoFocus</enum>
-               </property>
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
-               <property name="text">
-                <string>REF ALL</string>
-               </property>
-               <property name="rules" stdset="0">
-                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'REF ALL'&quot;, &quot;name&quot;: &quot;reference_all&quot;}]</string>
-               </property>
-               <property name="actionName" stdset="0">
-                <string>machine.home.all</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
           <item row="0" column="1">
            <widget class="QGroupBox" name="main_gbox_6">
             <property name="title">
@@ -342,104 +435,11 @@
             </layout>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QGroupBox" name="main_gbox_5">
-            <property name="title">
-             <string>MAIN</string>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_11">
-             <property name="spacing">
-              <number>10</number>
-             </property>
-             <item>
-              <widget class="ActionButton" name="estop_abutton_5">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>32</width>
-                 <height>27</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>100</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Sans</family>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
-               <property name="text">
-                <string>E-STOP</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="actionName" stdset="0">
-                <string>machine.estop.toggle</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="ActionButton" name="power_abutton_6">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>32</width>
-                 <height>27</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>100</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Sans</family>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
-               <property name="text">
-                <string>POWER</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="actionName" stdset="0">
-                <string>machine.power.toggle</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
          </layout>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_6">
+      <widget class="QWidget" name="tab_1">
        <attribute name="title">
         <string>NOTIFICATIONS</string>
        </attribute>
@@ -455,6 +455,29 @@
         </property>
         <item>
          <widget class="NotificationWidget" name="notificationwidget_2"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>SCOPE</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="HalPlot" name="halplot">
+          <property name="yAxisLabel" stdset="0">
+           <string>X ext Offset</string>
+          </property>
+          <property name="yAxisUnits" stdset="0">
+           <string>mm</string>
+          </property>
+          <property name="series1name" stdset="0">
+           <string>eoffset</string>
+          </property>
+          <property name="series2enable" stdset="0">
+           <bool>false</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -499,6 +522,11 @@
    <class>HalButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.hal_widgets.hal_button</header>
+  </customwidget>
+  <customwidget>
+   <class>HalPlot</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_plot</header>
   </customwidget>
  </customwidgets>
  <resources/>
