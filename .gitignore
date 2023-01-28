@@ -13,3 +13,4 @@ linuxcnc/sim.sg_cnc/halshow.preferences
 linuxcnc/sim.sg_cnc/sim.log
 
 *.log
+.settings/
